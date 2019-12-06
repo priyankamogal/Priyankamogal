@@ -10,15 +10,14 @@ if(x%i==0)
 {
 f=0;
 break;
-}
-}
+}}
 if(f==1)
 {
-printf(“prime”);
+printf(â€œprimeâ€);
 }
 else
 {
-printf(“not prime”);
+printf(â€œnot primeâ€);
 }
 return 0;
 }
