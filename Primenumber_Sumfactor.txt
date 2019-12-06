@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+int a[100],i,n,j,k=0;
+int count=0;
+int sum=0;
+printf("Enter a number: ");
+scanf("%d",&n);
+for(i=1;i<=n;i++){
+for(j=2;j<=n-1;j++){
+if(i%j==0){
+break;
+}}
+if(i==j)
+{ a[k]=i;
+printf("%d\n",a[k]);//print prime numbers upto n
+k++;
+}}
+for(i=0;i<k ;++i){
+sum=sum+(a[2*i]+a[(2*i)+1]);
+if(sum<=n && sum > -1){
+for(j=2;j<=n-1;j++){
+if(sum%j==0){
+break;
+}}
+if(sum==j)
+count++;//if sum of consecutive prime no. is prime
+}}}
+printf("count:%d",count);
+return 0;
+}
